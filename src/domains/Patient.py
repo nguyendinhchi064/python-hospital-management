@@ -1,19 +1,19 @@
 from Person import Person
 
 class Patient(Person):
-    def __init__(self, id, name, gend, dob):
-        super().__init__(id, name, gend, dob)
-        self.__illness = ""
-        self.__debt = 0
+    def __init__(self, id, name, gender, dob):
+        super().__init__(id, name, gender, dob)
+        self.illness = ""
+        self.debt = 0
 
     def get_illness(self):
-        return self.__illness
+        return self.illness
 
     def get_debt(self):
-        return self.__debt
+        return self.debt
     
     def set_illness(self, illness: str):
-        self.__illness = illness
+        self.illness = illness
 
     def set_debt(self, debt):
-        self.__debt = debt
+        self.debt = debt
